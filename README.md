@@ -1,6 +1,8 @@
 # k8s-commands
 
-Most common ways people install Kubernetes
+This is a collection of notes from the internet on how to do things kubernetes
+
+## Most common ways people install Kubernetes
 
 - Minikube: For local developement
 - kops and Kubeadm: For clouds and bare metal
