@@ -66,6 +66,10 @@ Deploy sample infrastructure:
 - `kubectl delete pods -n cart --all` deletes all pods in the cart namespace
 - `kubectl delete pods -l env=staging -n social` Deletes the pods in the social namespace that match the staging environment
 
+---
+
+# Take a break here
+
 ## Kops with AWS
 
 To use kops to run your own kubernetes cluster, you will need to the following.
@@ -109,8 +113,6 @@ Build the cluster per spec
 - `kops validate cluster` verify that everything works
 - You can use terraform to provison that nodes. (Read more terraform)
 
-# Next on...
-
-### Microservices
+# Microservices
 
 Microservices: An oriented architecture that structures the entire application as a collection of loosely coupled services.
