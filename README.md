@@ -26,15 +26,15 @@ Common way (from file): To use a yaml file within your local computer, use the c
 
 Multiple files:
 
-- `kubectl create -f blue.yaml -f green.yaml`
+- `kubectl create -f file-1-deploy.yaml file-2-deploy.yaml`
 
-Whole directory:
+Whole directory: Must have .yaml files
 
-- `kubectl create ./colors`
+- `kubectl create ./cluters`
 
 URL:
 
-- `kubectl apply -f https://raw.githubusercontent.com/karthequian/kubernetesHelloworld/master/hello.yaml`
+- `kubectl apply -f https://github.com/Cosmos-it/k8s-commands/blob/master/sample.yaml`
 
 ## Using namespaces
 
