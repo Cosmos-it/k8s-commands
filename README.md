@@ -14,9 +14,9 @@ General Management Tools
 - Kompose: For Exporting from docker with compose
 - Helm: For Large application management
 
-## Creating a cluster:
+## Creating a cluster
 
-When creating a cluster from an image, you will need to use the run command.
+When creating a cluster from an image, you can also use the run command.
 
 - `kubectl run give-name-of-cluster --image repo-name/image-name:latest`
 
@@ -42,17 +42,26 @@ URL:
 
 Deploy sample infrastructure:
 
-- `kubectl apply -f sample-infrastructure.yaml`
+- `kubectl apply -f sample.yaml`
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample
+spec:
+  containers:
+  - name: sample
+    image: ubuntu
+```
 
 #### Namespaces
 
 - `kubectl get pods` returns no results.
 - `kubectl get pods --all-namespaces` returns all our results.
 - `kubectl get namespaces` Returns just the namespaces
-
-## Searching, sorting and filtering applications on kubernetes
-
-#### More details
+ 
+#### More details on searching, sorting and filtering applications on kubernetes
 
 - `kubectl get pods --sort-by=.metadata.name` sorts pods by name
 - `kubectl get pods -o wide --all-namespaces` returns more details
